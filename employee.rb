@@ -1,6 +1,6 @@
 class Employee
 
-  attr_reader :name :salary
+  attr_reader :name, :salary
 
   def name=(name)
     if name == ""
@@ -23,3 +23,10 @@ class Employee
   end
 
 end
+
+
+amy = Employee.new
+amy.name = "Amy Blake"
+amy.salary = 50000
+
+amy.print_pay_stub
