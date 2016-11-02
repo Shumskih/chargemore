@@ -5,9 +5,10 @@ class Employee
   def name=(name)
     if name == ""
       raise "Name can't be blank!"
-    name
+    end
     @name = name
   end
+
 
   def salary=(salary)
     if salary < 0
